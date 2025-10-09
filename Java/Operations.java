@@ -1,4 +1,4 @@
-public class Main {
+public class Operations {
     
     public static void main(String[] args) {
         // numeric data and operations

@@ -89,7 +89,7 @@ public class ToDoListGUI {
         JFrame frame = new JFrame("To-Do List");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(300, 400);
-
+ 
         listModel = new DefaultListModel<>();
         taskList = new JList<>(listModel);
         JScrollPane scrollPane = new JScrollPane(taskList);
@@ -116,7 +116,7 @@ public class ToDoListGUI {
             }
         });
 
-        exitButton.addActionListener(e -> {
+        exitButton.addActionListener(e -> { 
             toDoList.saveTasks();
             System.exit(0);
         });
