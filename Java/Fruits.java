@@ -3,7 +3,7 @@ import java.util.*;
 public class Fruits {
 
     public static void main(String[] args) {
-        Collection<String> Fruits = new ArrayList<>();
+        Collection<String> Fruits = new ArrayList<String>();
 
         // Adding fruits to the collection
         Fruits.add("Apple");

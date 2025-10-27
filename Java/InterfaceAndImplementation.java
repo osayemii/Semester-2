@@ -1,9 +1,9 @@
-public interface Payment {
+public interface InterfaceAndImplementation {
     abstract void makePayment(double amount);
 }
 
 // implement using cash payment
-class CashPayment implements Payment {
+class CashPayment implements InterfaceAndImplementation {
     @Override
     public void makePayment(double amount) {
         System.out.println("Paid " + amount + " using cash.");
@@ -11,7 +11,7 @@ class CashPayment implements Payment {
 }
 
 // implement using card payment
-class CardPayment implements Payment {
+class CardPayment implements InterfaceAndImplementation {
     @Override
     public void makePayment(double amount) {
         System.out.println("Paid " + amount + " using card.");
@@ -19,7 +19,7 @@ class CardPayment implements Payment {
 }
 
 // implement using online payment
-class OnlinePayment implements Payment {
+class OnlinePayment implements InterfaceAndImplementation {
     @Override
     public void makePayment(double amount) {
         System.out.println("Paid " + amount + " using online payment.");
